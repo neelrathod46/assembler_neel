@@ -14,7 +14,7 @@ dataset /home/neel/bioinfo_project/massembly1/dataset.info
 log_filename    log.properties
 
 output_base /home/neel/bioinfo_project/massembly1
-tmp_dir /home/neel/bioinfo_project/massembly1/tmp/spades_5uy99877
+tmp_dir /home/neel/bioinfo_project/massembly1/tmp/spades_s5wjq8ah
 
 main_iteration false
 ; iterative mode switcher, activates additional contigs usage

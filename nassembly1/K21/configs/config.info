@@ -14,7 +14,7 @@ dataset /home/neel/bioinfo_project/nassembly1/dataset.info
 log_filename    log.properties
 
 output_base /home/neel/bioinfo_project/nassembly1
-tmp_dir /home/neel/bioinfo_project/nassembly1/tmp/spades_urwsvsuk
+tmp_dir /home/neel/bioinfo_project/nassembly1/tmp/spades_ad78bwui
 
 main_iteration false
 ; iterative mode switcher, activates additional contigs usage

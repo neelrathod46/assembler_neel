@@ -2,7 +2,7 @@
   args: []
   config_dir: ''
   del_after: []
-  job_uuid: SPAdes_Before_start_TGJOBSYXVLE8QQ2XINXSV51XUX3OZJN5
+  job_uuid: SPAdes_Before_start_I5CIV1RR4KJ1OY5SHXS1TFK1N1UUH763
   mpi_support: false
   output_files: []
   path: 'true'
@@ -11,7 +11,7 @@
   args: []
   config_dir: ''
   del_after: []
-  job_uuid: SPAdes_Assembling_43V060L1OI7DHBQIE28URVRCIO6BJ1W5
+  job_uuid: SPAdes_Assembling_OARAZ2SO58JFPCF1F6W43CUC5CZJ5CGK
   mpi_support: false
   output_files: []
   path: 'true'
@@ -22,7 +22,7 @@
   - /home/neel/bioinfo_project/massembly1/K21/configs/isolate_mode.info
   config_dir: K21
   del_after: []
-  job_uuid: SPAdes_K21_ZWIW5LOAZWMQJAF198UWE5XD1238BO3B
+  job_uuid: SPAdes_K21_PD1L7D6IC82IXFG1VZ56R8OJGFUQV0XS
   mpi_support: false
   output_files: []
   path: /home/neel/SPAdes-4.3.0-Linux/bin/spades-core
@@ -33,7 +33,7 @@
   - /home/neel/bioinfo_project/massembly1/K33/configs/isolate_mode.info
   config_dir: K33
   del_after: []
-  job_uuid: SPAdes_K33_QZ8EC0V3R6N891DSAJXOKIVW5MBL1WLT
+  job_uuid: SPAdes_K33_SXHFBKB7MA4OROXQ34NWMTYCA1YTH5CD
   mpi_support: false
   output_files: []
   path: /home/neel/SPAdes-4.3.0-Linux/bin/spades-core
@@ -64,8 +64,8 @@
   config_dir: ''
   del_after:
   - .bin_reads
-  - tmp/spades_5uy99877
-  job_uuid: SPAdes_Copy_files_P00MWGXZ6EYHL7VADOW5I0KI3L7UJ94J
+  - tmp/spades_s5wjq8ah
+  job_uuid: SPAdes_Copy_files_CW3B1GJMZMXYLT697HV6ABKKWTRL68LV
   mpi_support: false
   output_files: []
   path: /home/neel/bioinfo_project/.venv/bin/python3
@@ -74,7 +74,7 @@
   args: []
   config_dir: ''
   del_after: []
-  job_uuid: SPAdes_Assembling_99MMS9X5A7RDKH5XUICCB0PWMBL46JPN
+  job_uuid: SPAdes_Assembling_WGQJRL6GB659FV6001U5A43E0ALIELNC
   mpi_support: false
   output_files: []
   path: 'true'
@@ -90,7 +90,7 @@
   - '3'
   config_dir: ''
   del_after: []
-  job_uuid: SPAdes_Breaking_scaffolds_Z1L4ZWYCIJN283INEE9F0LI2F1I3VPKG
+  job_uuid: SPAdes_Breaking_scaffolds_SNS5DY7E5I7YKZRRFXI0WKEZC0PAMN79
   mpi_support: false
   output_files: []
   path: /home/neel/bioinfo_project/.venv/bin/python3
@@ -100,7 +100,7 @@
   config_dir: ''
   del_after:
   - configs
-  job_uuid: SPAdes_Terminate_WTJ1P9TEIVX91QEZZZI31JXGM7KG7ARO
+  job_uuid: SPAdes_Terminate_SVTDNZ3DCSCMV1VHOF2ELRFCXY3EGC9Y
   mpi_support: false
   output_files: []
   path: 'true'

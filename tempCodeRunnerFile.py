@@ -1,0 +1,2 @@
+
+    seq = "".join(seq)

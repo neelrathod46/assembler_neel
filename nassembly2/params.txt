@@ -1,0 +1,32 @@
+Command line: /home/neel/SPAdes-4.3.0-Linux/bin/spades.py	-s	/home/neel/bioinfo_project/reads2.fa	-o	/home/neel/bioinfo_project/nassembly2	--isolate	
+
+System information:
+  SPAdes version: 4.3.0
+  Python version: 3.12.13
+  OS: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+
+Output dir: /home/neel/bioinfo_project/nassembly2
+Mode: ONLY assembling (without read error correction)
+Debug mode is turned OFF
+
+Dataset parameters:
+  Isolate mode
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/home/neel/bioinfo_project/reads2.fa']
+      merged reads: not specified
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /home/neel/bioinfo_project/nassembly2/tmp
+  Threads: 16
+  Memory limit (in Gb): 3
+

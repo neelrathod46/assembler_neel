@@ -1,8 +1,8 @@
-é	---
+è	---
 max read length: 50
 nomerge max read length: 50
-average read length: 49.994
-average coverage: 8.13822
+average read length: 49.9351
+average coverage: 8.10396
 libraries:
   - type:            single
     number:          1
@@ -28,8 +28,8 @@ libraries:
         chunk num:       12
       single reads mapped: true
       library index:   0
-      number of reads: 1000
-      total nucleotides: 49994
+      number of reads: 1001
+      total nucleotides: 49985
       read cloud info:
         fragment length distribution: {  }
 ...

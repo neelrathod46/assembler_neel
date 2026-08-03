@@ -1,0 +1,107 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_1XRSQSOHPXWFM9DWLLXUHFMPF89A9XAC
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_W8MHAG7IOLLUFMKXTUHDD45BR7JIPM4Z
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/neel/bioinfo_project/nassembly2/K21/configs/config.info
+  - /home/neel/bioinfo_project/nassembly2/K21/configs/isolate_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: SPAdes_K21_GHJR0OA9A5GIBNV2IB3WEG7GZE1TFXSU
+  mpi_support: false
+  output_files: []
+  path: /home/neel/SPAdes-4.3.0-Linux/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /home/neel/bioinfo_project/nassembly2/K33/configs/config.info
+  - /home/neel/bioinfo_project/nassembly2/K33/configs/isolate_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: SPAdes_K33_Q1DGGQE6K91FTXLWC9RHP2OPKTT4ILNS
+  mpi_support: false
+  output_files: []
+  path: /home/neel/SPAdes-4.3.0-Linux/bin/spades-core
+  short_name: k33
+- STAGE: Copy files
+  args:
+  - /home/neel/SPAdes-4.3.0-Linux/share/spades/spades_pipeline/supplemetary/copy_files.py
+  - /home/neel/bioinfo_project/nassembly2/K33/before_rr.fasta
+  - /home/neel/bioinfo_project/nassembly2/before_rr.fasta
+  - /home/neel/bioinfo_project/nassembly2/K33/assembly_graph_after_simplification.gfa
+  - /home/neel/bioinfo_project/nassembly2/assembly_graph_after_simplification.gfa
+  - /home/neel/bioinfo_project/nassembly2/K33/final_contigs.fasta
+  - /home/neel/bioinfo_project/nassembly2/contigs.fasta
+  - /home/neel/bioinfo_project/nassembly2/K33/first_pe_contigs.fasta
+  - /home/neel/bioinfo_project/nassembly2/first_pe_contigs.fasta
+  - /home/neel/bioinfo_project/nassembly2/K33/strain_graph.gfa
+  - /home/neel/bioinfo_project/nassembly2/strain_graph.gfa
+  - /home/neel/bioinfo_project/nassembly2/K33/scaffolds.fasta
+  - /home/neel/bioinfo_project/nassembly2/scaffolds.fasta
+  - /home/neel/bioinfo_project/nassembly2/K33/scaffolds.paths
+  - /home/neel/bioinfo_project/nassembly2/scaffolds.paths
+  - /home/neel/bioinfo_project/nassembly2/K33/assembly_graph_with_scaffolds.gfa
+  - /home/neel/bioinfo_project/nassembly2/assembly_graph_with_scaffolds.gfa
+  - /home/neel/bioinfo_project/nassembly2/K33/assembly_graph.fastg
+  - /home/neel/bioinfo_project/nassembly2/assembly_graph.fastg
+  - /home/neel/bioinfo_project/nassembly2/K33/final_contigs.paths
+  - /home/neel/bioinfo_project/nassembly2/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_893_kmg3
+  job_uuid: SPAdes_Copy_files_KWEMCXXAOADBDA3IFW4CZ3PIU9TJFBRL
+  mpi_support: false
+  output_files: []
+  path: /home/neel/bioinfo_project/.venv/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_Y5Y1MBOKCPWO0MXTJCFQGYHIDEG5JFMP
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/neel/SPAdes-4.3.0-Linux/share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/neel/bioinfo_project/nassembly2/scaffolds.fasta
+  - --misc_dir
+  - /home/neel/bioinfo_project/nassembly2/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_XNBH2EH8G9BMWLFHUA1ALSQ8VE0C2WNV
+  mpi_support: false
+  output_files: []
+  path: /home/neel/bioinfo_project/.venv/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_NE48I28L30006KM530L1PEAJ3B56ZF6T
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate
